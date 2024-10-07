@@ -8,11 +8,11 @@ Implement an ETL (Extract, Transform, Load) pipeline that extracts the financial
 
 Data flow architecture. Need to mofidy a little of project flow.
 
-<img src="./etl-diagram.png" alt="Data flow architecture">
+<img src="./images/etl-diagram.png" alt="Data flow architecture">
 
 Dashboard for visualizarion
 
-<img src="./dashboard.png" alt="Dashboard">
+<img src="./images/dashboard.png" alt="Dashboard">
 
 ## Objectives.
 
