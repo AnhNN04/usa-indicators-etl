@@ -1,0 +1,38 @@
+Time: 2024-Sep-09/11/24-21:13:45.
+Check the first few rows:
+     Year  AG.AGR.TRAC.NO  AG.CON.FERT.PT.ZS  ...  VC.IHR.PSRC.FE.P5  VC.IHR.PSRC.MA.P5  VC.IHR.PSRC.P5
+0  YR1960    4.742589e+06         100.070615  ...           2.725376           9.807422        6.275388
+1  YR1961    4.690000e+06          92.016399  ...           2.725376           9.807422        6.275388
+2  YR1962    4.730000e+06          93.628184  ...           2.725376           9.807422        6.275388
+3  YR1963    4.755000e+06          92.345584  ...           2.725376           9.807422        6.275388
+4  YR1964    4.783000e+06          92.103607  ...           2.725376           9.807422        6.275388
+
+[5 rows x 1167 columns]
+
+Summary statistics:
+       AG.AGR.TRAC.NO  AG.CON.FERT.PT.ZS  ...  VC.IHR.PSRC.MA.P5  VC.IHR.PSRC.P5
+count    6.400000e+01          64.000000  ...          64.000000       64.000000
+mean     4.742589e+06         100.070615  ...           9.807422        6.275388
+std      2.915058e+05          16.393603  ...           1.818547        1.128527
+min      4.304906e+06          73.016680  ...           6.901258        4.398294
+25%      4.538927e+06          91.788331  ...           8.908883        5.745213
+50%      4.742589e+06          97.588702  ...           9.807422        6.275388
+75%      4.784500e+06         108.846079  ...           9.807422        6.275388
+max      5.470000e+06         135.382340  ...          15.636088        9.819916
+
+[8 rows x 1166 columns]
+
+Check for missing values:
+Year                 0
+AG.AGR.TRAC.NO       0
+AG.CON.FERT.PT.ZS    0
+AG.CON.FERT.ZS       0
+AG.LND.AGRI.K2       0
+                    ..
+VC.BTL.DETH          0
+VC.IDP.NWDS          0
+VC.IHR.PSRC.FE.P5    0
+VC.IHR.PSRC.MA.P5    0
+VC.IHR.PSRC.P5       0
+Length: 1167, dtype: int64
+
