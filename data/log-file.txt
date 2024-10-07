@@ -1,0 +1,69 @@
+2024-Sep-09/11/24-21:12:07: BEGINNING ETL PROCESS.
+2024-Sep-09/11/24-21:12:07: Etract processing START.
+2024-Sep-09/11/24-21:13:41: API Connection Succeesfully.
+2024-Sep-09/11/24-21:13:41: Total fetching time: 0:01:33.391945s
+2024-Sep-09/11/24-21:13:41: Saving raw data to raw-data.csv Successfully.
+2024-Sep-09/11/24-21:13:41: Etract processing END.
+2024-Sep-09/11/24-21:13:41: Transform processing START.
+2024-Sep-09/11/24-21:13:46: Some basic transforming: Remaning, Set-index, Handle missing value,ect are Successfully.
+2024-Sep-09/11/24-21:13:46: Save processed data Successfully.
+2024-Sep-09/11/24-21:13:46: Transform processing END.
+2024-Sep-09/11/24-21:13:46: Load Processing START.
+2024-Sep-09/11/24-21:13:46: Database connection Successfully.
+2024-Sep-09/11/24-21:13:47: DataFrame inserted Successfully.
+2024-Sep-09/11/24-21:13:47: Load Processing END.
+2024-Sep-09/11/24-21:13:47: END OF ETL PROCESS.
+
+2024-Sep-09/11/24-21:13:58: TESTING LOAD DATABASE START
+2024-Sep-09/11/24-21:13:58: Select data from us_indicators Successfully.
+2024-Sep-09/11/24-21:13:58: TESTING LOAD DATABASE END.
+
+2024-Sep-09/11/24-21:14:08: DASHBOARD START
+2024-Sep-09/11/24-21:14:09: Save gdp_plot.png Successfully.
+2024-Sep-09/11/24-21:14:09: Save uem_plot.png Successfully.
+2024-Sep-09/11/24-21:14:10: Save cpi_plot.png Successfully.
+2024-Sep-09/11/24-21:14:10: Save pp_plot.png Successfully.
+2024-Sep-09/11/24-21:14:10: DASHBOARD END.
+
+2024-Sep-09/11/24-21:14:16: MACHINE LEARNING MODEL START.
+2024-Sep-09/11/24-21:14:16: Fetch data from PostgreSQL:
+Rows = 64.
+Columns = 1166.
+
+2024-Sep-09/11/24-21:14:16: After some transformation steps: 
+Rows = 64.
+Columns = 1138.
+
+2024-Sep-09/11/24-21:14:16: GDP_LABEL_TEST = 27360935000000.0
+2024-Sep-09/11/24-21:14:16: INPUT_TEST =
+AG.AGR.TRAC.NO       4.742589e+06
+AG.CON.FERT.PT.ZS    1.000706e+02
+AG.CON.FERT.ZS       1.031538e+02
+AG.LND.AGRI.K2       4.220416e+06
+AG.LND.AGRI.ZS       4.609056e+01
+                         ...     
+VC.BTL.DETH          2.330000e+02
+VC.IDP.NWDS          2.020000e+05
+VC.IHR.PSRC.FE.P5    2.725376e+00
+VC.IHR.PSRC.MA.P5    9.807422e+00
+VC.IHR.PSRC.P5       6.275388e+00
+Name: 63, Length: 1137, dtype: float64
+
+2024-Sep-09/11/24-21:14:16: Standard data set :
+Rows = 63.
+Columns = 1138.
+2024-Sep-09/11/24-21:16:02: Model learning starts
+2024-Sep-09/11/24-21:16:02: Model learning ends
+2024-Sep-09/11/24-21:16:02: Make prediction
+2024-Sep-09/11/24-21:16:02: Evaluate the model
+2024-Sep-09/11/24-21:16:02: Model Metrics:
+2024-Sep-09/11/24-21:16:02: Mean Squared Error: 1.9046401245628732e+24
+2024-Sep-09/11/24-21:16:02: R-squared: 0.9690040231456323
+2024-Sep-09/11/24-21:16:02: Model Coefficients: 
+[-2.79806997e-04 -8.58833171e-10 -8.63921712e-11 ...  3.98131961e-12
+  2.85065853e-12  4.97493513e-12]
+2024-Sep-09/11/24-21:16:02: Model Intercept: -4521508874327.909
+2024-Sep-09/11/24-21:16:03: Save test_set_ML.png Successfully.
+2024-Sep-09/11/24-21:16:04: Save all_set_ML.png Successfully.
+2024-Sep-09/11/24-21:16:04: MACHINE LEARNING MODEL END.
+
